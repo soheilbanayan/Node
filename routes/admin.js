@@ -1,4 +1,3 @@
-const path = require('path');
 const express = require('express');
 const route = express.Router();//function to execute
 const productsControllers = require('../controllers/products');
