@@ -18,7 +18,7 @@ const errors = require('./controllers/error');
 app.use(bodyParser.urlencoded( {extended: false} ));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin',adminDRoute.route); // reg as first.. 
+app.use('/admin',adminDRoute); // reg as first.. 
 app.use(shopRoute); //register as second.. oreder matters
 
 
